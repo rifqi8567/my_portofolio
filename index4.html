@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Custom CSS for additional styling */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 50, 0.3);
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Simplified Navigation -->
+    <nav class="bg-gray-900 bg-opacity-90 backdrop-blur-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-xl font-bold text-blue-400">My</span><span class="text-white">Certificates</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../index.html" class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                            <i class="fas fa-arrow-left mr-1"></i> Back to Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <header class="pt-24 pb-12 md:pt-32 md:pb-16 px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="floating inline-block mb-6">
+                <div class="bg-blue-600 bg-opacity-60 rounded-full p-4 shadow-lg">
+                     <i class="fas fa-award text-4xl text-blue-200"></i>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">My <span class="text-blue-400">Certificates</span> Collection</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"> Here are some of the certifications I've earned through my professional journey. Each certificate represents a milestone in my continuous learning path.</p>
+        </div>
+        <div class="absolute left-0 right-0 h-16 bg-gradient-to-b from-blue-900 to-transparent opacity-60"></div>
+    </header>
+
+    <!-- Main Projects Showcase -->
+    <main class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <!-- Project Filters -->
+            <div class="mb-12">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium" data-filter="all">
+                        All Certificates
+                    </button>
+                    <button class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-full text-sm font-medium" data-filter="course">
+                        Course Certificate
+                    </button>
+                    <button class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-full text-sm font-medium" data-filter="competency">
+                        Certificate of Competency
+                    </button>
+                    <button class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-full text-sm font-medium" data-filter="participation">
+                        Certificate of Participation
+                    </button>
+
+                </div>
+            </div>
+          <section id="certificates" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-white">
+                <span class="text-gradient">My Certificates</span>
+            </h2>
+            <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+                Here are some of the certifications I've earned through my professional journey. Each certificate represents a milestone in my continuous learning path.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certificate 1 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="participation">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s1.png" alt="Certificate 1" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">Tutormy.id</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Tutormy.id</p>
+                        <a href="https://drive.google.com/file/d/16UsIqlaVCjFFfi92ZuBhd5bWiGiR4Uyy/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Certificate 2 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="competency">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s2.jpg" alt="Certificate 2" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">TOAFL</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Al - Azhar Pare</p>
+                        <a href="https://drive.google.com/file/d/1gFBlCsKgVcCIZmcYg6J8xd-9duA50Rzd/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="competency">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s3.jpg" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">Google Play Store</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Google</p>
+                        <a href="https://www.credential.net/83e7ed6e-cfb6-471c-a0b5-a1178177de2c?utm_source=whatsapp&utm_medium=social" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="course">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s4.jpg" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">Intro Coding</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Skilvul</p>
+                        <a href="https://drive.google.com/file/d/17gNOTSozEINbxR-QpUh3I6wPz1bwIhjT/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Certificate 5 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="course">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s5.jpg" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">CSS Dasar</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Skilvul</p>
+                        <a href="https://drive.google.com/file/d/1skJ7-Dt_6G3eKBjCNlPrL-dJo7mNBSXI/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                 <!-- Certificate 6 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="course">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s6.jpg" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">HTML Dasar</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Skilvul</p>
+                        <a href="https://drive.google.com/file/d/1jRTWjHM_nm32e1pg93zEgDELwbhhvsOk/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Certificate 7 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="participation">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s7.jpg" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">Webiner #75</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Dicoding</p>
+                        <a href="https://drive.google.com/file/d/1_TDHbZqjWHy2sNk1DNu18E62_UGwa0pa/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Certificate 8 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="course">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s8.jpg" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">Java Script Dasar</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Skilvul</p>
+                        <a href="https://drive.google.com/file/d/1L0TXz_vn72b8YUvonGmT6-EHSfvk-jba/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                 <!-- Certificate 9 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="participation">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s9.jpg" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">Webiner #76</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Dicoding</p>
+                        <a href="https://drive.google.com/file/d/1ZYhStQHtrhWcXcRwCpm6y249CS7mfC7C/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                 <!-- Certificate 10 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="competency">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s10.png" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">IDN Mengajar</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Politeknik IDN</p>
+                        <a href="https://drive.google.com/file/d/19rPXwTQ1esHLSb6kvyzUqmDw-_GO27I7/view" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                 <!-- Certificate 11 -->
+                <div class="certificate-card bg-gray-900 rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-400/50" data-category="course">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="s11.png" alt="Certificate 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">2024</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2">Java Script Intermediet</h3>
+                        <p class="text-gray-400 text-sm mb-4">Issued by: Skilvul</p>
+                        <a href="https://skilvul.com/courses/javascript-intermediate/student/cm32gs95y00c301qt5ge795t9/" class="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                            View Certificate <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    
+            <br><br><br>
+        </div>
+    </section>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const certificateCards = document.querySelectorAll('.certificate-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        certificateCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || filter === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Optional: Toggle active button style
+        filterButtons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
+        filterButtons.forEach(btn => btn.classList.add('bg-gray-700', 'text-gray-300'));
+
+        button.classList.remove('bg-gray-700', 'text-gray-300');
+        button.classList.add('bg-blue-600', 'text-white');
+      });
+    });
+  });
+</script>
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-bold text-blue-300">Dev<span class="text-white">Portfolio</span></span>
+                    <p class="text-blue-400 mt-2">© 2025 All Rights Reserved</p>
+                </div>
+                <div class="flex space-x-6">
+                     <a href="https://www.instagram.com/muhammad_rifqy_/profilecard/?igsh=MzJwMXRpZGd2Zzlu" class="text-blue-400 hover:text-white">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://x.com/Muhamma38832065" class="text-blue-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhamnadrifqi/" class="text-blue-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/rifqi8567" class="text-blue-400 hover:text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top" class="fixed bottom-8 right-8 bg-blue-700 hover:bg-blue-600 text-white p-3 rounded-full opacity-0 invisible transition-all duration-300">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+    <!-- Projects JavaScript -->
+    <script>
+        // Project filtering functionality
+        document.querySelectorAll('[data-filter]').forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.dataset.filter;
+                
+                // Update active button
+                document.querySelectorAll('[data-filter]').forEach(btn => {
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.add('bg-gray-700', 'text-gray-300', 'hover:bg-gray-600');
+                });
+                this.classList.add('bg-blue-600', 'text-white');
+                this.classList.remove('bg-gray-700', 'text-gray-300', 'hover:bg-gray-600');
+                
+                // Filter projects
+                document.querySelectorAll('.project-card').forEach(project => {
+                    const category = project.dataset.category;
+                    
+                    if (filter === 'all' || category === filter) {
+                        project.classList.remove('hidden');
+                    } else {
+                        project.classList.add('hidden');
+                    }
+                });
+            });
+        });
+        
+        // Project modal functionality
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        projectCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const projectId = this.dataset.id;
+                // Here you would typically show a modal with more project details
+                console.log('Showing details for project:', projectId);
+            });
+        });
+    </script>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Load more projects button
+        const loadMoreButton = document.getElementById('load-more');
+        if (loadMoreButton) {
+            loadMoreButton.addEventListener('click', () => {
+                // In a real application, this would fetch more projects from an API
+                alert('Loading more projects... (This is a demo)');
+            });
+        }
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
